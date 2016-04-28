@@ -1,0 +1,13 @@
+<h1>{{ title }}</h1>
+<p>Trending users:</p>
+<ul>
+{% for person in people %}
+  <li>{{ person.name }}</li>
+{% endfor %}
+</ul>
+<p>Trending hashtags:</p>
+<ul>
+{% for hashtag in hashtags %}
+  <li>{{ hashtag.topic }}</li>
+{% endfor %}
+</ul>
