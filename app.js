@@ -11,16 +11,6 @@ server.on('request', app)
 
 app.use(morgan(':method :url :status'))
 
-
-// app.use(function (req, res, next) {
-//     console.log(req.method+req.path)
-//     next();
-// })
-
-// app.use('/special/:', function (req, res, next) {
-//     console.log("you've reached the special path: "+req.path)
-//     next();
-// })
 var people = [{name: '@peggy'}, {name: '@patrice'}, {name: '@gracehopper'}]
 var hashtags = [{topic: '#express'}, {topic: '#node'}, {topic: '#lacolombe'}];
 
