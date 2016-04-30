@@ -1,5 +1,4 @@
 var express = require('express');
-var bodyParser = require('body-parser');
 var router = express.Router();
 // could use one line instead: var router = require('express').Router();
 var tweetBank = require('../tweetBank');
@@ -35,7 +34,7 @@ router.post('/tweets', function(req, res) {
 router.get('/users/:name', function(req, res) {
 	var name = req.params.name;
 	var list = tweetBank.find({name:name});
-	res.render( 'index', { title: 'Twitter.js - Posts by '+name, tweets: list } );
+	res.render( 'index', { title: 'Twitter.js - Posts by '+name, tweets: list, showForm: true } );
 });
 
 router.get('/tweets/:id', function(req, res) {

@@ -20,28 +20,6 @@ body {
   background-color: #f5f5f5;
 }
 
-.feed {
-  border-bottom:1px solid black;
-  text-align:left;
-}
-
-.feed img {
-    margin-top:8.5px;
-    margin-left:5px;
-    display:inline
-    width: 50%; 
-    height: auto; 
-}
-
-#proffeed {
-  display:block ;
-}
-
-#name {
-  font-style: bold;
-  color: #0084b4;
-}
-
 
 /* Custom page CSS
 -------------------------------------------------- */

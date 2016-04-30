@@ -11,7 +11,10 @@ server.on('request', app);
 // Routes 
 var routes = require('./routes/');
 app.use('/',routes);
-
+var socketio = require('socket.io');
+// ...
+var server = app.listen(3000);
+var io = socketio.listen(server);
 var morgan = require('morgan')
 
 app.use(morgan(':method :url :status'))
